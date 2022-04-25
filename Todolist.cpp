@@ -1,11 +1,29 @@
-// Todolist.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// 3.  Todo list Primera iteración.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
 
 #include <iostream>
+#include "Add.h"
+#include "Menu.h"
+#include <vector>
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	std::string tarea;
+
+
+	std::cout << "\t\tCeti Colomos";
+	std::cout << "\t\tHector Mauricio Rodriguez Salazar 21310416";
+	std::cout << "\t\tGrupo 2P T/M";
+	std::cout << "\n\t\tBienvenido, este es un Todo list"<<std::endl;
+
+		
+	Menu a(tarea);
+	a.carta();
+
+	std::cout << "\n" << std::endl;
+	system("pause");
+	return 0;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
