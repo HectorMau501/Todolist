@@ -15,9 +15,9 @@ class Menu : public Add
 		void carta()
 		{
 			int option = 0;
-			ptrPila p = NULL;
+			ptrPila p = NULL; //Creando la pila o una estructura de datos
 			std::string dato;
-			std::string  x;
+			std::string  x; //con esta variable se devuelve el metodo borrar
 
 			while (option != 4)
 			{

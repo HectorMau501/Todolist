@@ -7,18 +7,22 @@ using namespace std;
 class Add
 {
 private:
+
+	//Este es el nodo
 	std::string homework;
 	class Add *next;
 
 public:
 
-	Add(){}
+	Add(){}//Constructor vacio 
 	Add(std::string _homework)
 	{
 		homework = _homework;
 	}
 	~Add(){}
 
+
+	//Aqui se crea el puntero
     typedef Add *ptrPila;
 
     
@@ -33,13 +37,13 @@ public:
     }
 
     //Borrar elemento en la pila
-    
     std::string Borrar(ptrPila &p)
     {
         std::string homework;
         ptrPila aux;
 
         aux = p;
+		//Aqui se asigna el valor de la pila
         homework = aux->homework;
 
         p = aux->next;
@@ -48,9 +52,11 @@ public:
         return homework;
     }
 
+	//Aqui se muestran los elementos de la lista
     void Listar_pila(ptrPila p)
     {
         ptrPila aux;
+		//Aqui se apunta al comienzo de la lista
         aux = p;
 
         while(aux != NULL)
