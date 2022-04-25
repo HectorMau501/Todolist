@@ -38,6 +38,7 @@ class Menu : public Add
 
 				case 1:
 					std::cout << "\t\t\n\nEscriba la tarea" << std::endl;
+					std::cout << "\t\t\n\nTiene que ser una palabra sin espacios" << std::endl;
 					std::cin >> dato;
 					Insertar(p, dato);
 					std::cout << " Tarea  " << dato << " Agregada\n\n" << std::endl;
